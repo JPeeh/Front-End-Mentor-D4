@@ -98,7 +98,7 @@ main{
     main{
         flex-direction: column;
         max-width: 375px;
-        margin: 0px 1rem;
+        margin: 0px 1rem 1rem;
     }
 
     .top_content{
