@@ -11,12 +11,13 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: clamp(1rem , 1rem + 3vw, 3rem);
     min-height: 100vh;
+    min-width: 350px;
 }
 
 p{
-    color:  hsl(229, 6%, 66%);
+    color:hsl(229, 6%, 66%);
 }
 
 .top_content{
@@ -34,6 +35,7 @@ p{
 .top_content p{
     max-width: 55ch;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 
 main{
@@ -67,14 +69,16 @@ main{
 
 .card p{
     margin-bottom: 3rem;
+    font-size: .95rem;
 }
 
 .card img{
     float: right;
 }
 
-main .first{
+.first{
     border-top: 4px solid hsl(180, 62%, 55%);
+    width: 100%;
 }
 
 .second{
@@ -90,7 +94,7 @@ main .first{
 }
 
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 768px) {
 
     main{
         flex-direction: column;
@@ -98,7 +102,18 @@ main .first{
     }
 
     .top_content{
-        padding: 2rem;
+        padding: 1rem;
     }
-    
+
+    .top_content h1, h2{
+        font-size: clamp(1em, 1em + 2.5vw, 2.5em);
+    }
+
+    .top_content p{
+        font-size: clamp(.7em, .5em + 1vw, 1.25em);
+    }
+
+    .card p{
+        font-size: clamp(.7em, .5em + 1vw, 1.25em);
+    }
 }
