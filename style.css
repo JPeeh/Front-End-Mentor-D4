@@ -28,7 +28,7 @@ p{
 }
 
 .top_content h1,h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .top_content p{
@@ -38,24 +38,24 @@ p{
 
 main{
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     max-width: 1440px;
     align-items: center;
     justify-content: center;
 }
 
 .container_cards_md{
-    flex-basis: calc(33.3% - 4rem);
+    flex-basis: calc(33.3% - 5rem);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .card{
     padding: 2rem 2.5rem ;
     background-color: white;
-    border-radius: 10px;
-    flex-basis: calc(33.3% - 4rem);
+    border-radius: 6px;
+    flex-basis: calc(33.3% - 5rem);
     height: fit-content;
     box-shadow: 0px 9px 20px rgba(0,0,0, .2);
 }
